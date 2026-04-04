@@ -12,7 +12,7 @@ spec:
           replicasCount: 1
     users:
       default/networks/ip:
-        - "0.0.0.0/0"
+        - "0.0.0.0/0" # Required for Sentry pods to connect
   templates:
     podTemplates:
       - name: clickhouse-single-node

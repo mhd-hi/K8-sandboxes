@@ -1,0 +1,9 @@
+crdHook:
+  enabled: false
+
+configs:
+  files:
+    config.yaml:
+      watch:
+        namespaces:
+          - sentry

@@ -6,12 +6,19 @@ namespace: sentry
 resources:
   - ../base
   - clickhouse.yaml
-  - httpproxy.yaml
+  # - httpproxy.yaml
 
 helmCharts:
+  # - name: altinity-clickhouse-operator
+  #   version: "0.26.0"
+  #   repo: "https://helm.altinity.com"
+  #   releaseName: clickhouse-operator
+  #   namespace: sentry
+  #   valuesFile: clickhouse-operator-values.yaml
+
   - name: sentry
     version: "29.5.1"
     repo: "https://sentry-kubernetes.github.io/charts"
-    releaseName: "sentry"
+    releaseName: sentry
     namespace: sentry
-    valuesFile: values.yaml
+    valuesFile: sentry-values.yaml
