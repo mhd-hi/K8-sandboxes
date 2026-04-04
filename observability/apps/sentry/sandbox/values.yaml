@@ -1,0 +1,14 @@
+nginx:
+  enabled: true
+
+ingress:
+  enabled: false
+
+externalClickhouse:
+  host: clickhouse-sentry-clickhouse.sentry.svc
+  httpPort: 8123
+  tcpPort: 9000
+  username: default
+  password: ""
+  database: default
+  singleNode: true
