@@ -4,9 +4,10 @@ metadata:
   name: sentry
 spec:
   virtualhost:
-    fqdn: sentry.sandbox.cedille.club
-    tls:
-      secretName: tls-delegation/sandbox-tls
+    #fqdn: sentry.sandbox.cedille.club
+    #  tls:
+    #    secretName: tls-delegation/sandbox-tls
+    fqdn: sentry.localhost
   routes:
     - conditions:
         - prefix: /
